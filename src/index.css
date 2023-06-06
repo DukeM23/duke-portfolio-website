@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-5xl font-semibold
+    }
+
+    h3 {
+        @apply text-2xl font-semibold
+    }
+    
+    /* p {
+        @apply text-3xl
+    } */
+}
+
+@layer components {
+    .kami-sama {
+        @apply transition ease-in-out absolute -rotate-45 translate-x-[20vw] -translate-y-[10vw]
+    } 
+    
+    .kami-sama:hover {
+        @apply hover:translate-x-56
+    }
+
+    .good-vibration {
+        @apply  transition -z-10 w-1/12 ease-in-out absolute -translate-y-[5vw] translate-x-[35vw]
+    }
+
+    .kami-sama:hover + .good-vibration {
+        @apply translate-x-14
+    }
+}
