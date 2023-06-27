@@ -5,8 +5,13 @@ export default {
     extend: {
       colors: {
         white: "#ffffff",
-        primary: "#e4dccf",
-        secondary: "#576f72",
+        primary: {
+          900: "#e4dccf",
+        },
+        secondary: {
+          100: "#7d9d9c",
+          200: "#576f72",
+        },
         // 'tertiery'
       },
       fontFamily: {
@@ -18,10 +23,18 @@ export default {
           "50%": { transform: "translateY(0)" },
           "100%": { transform: "translateY(2rem)" },
         },
+        "float-1": {
+          "0%": { transform: "translateY(0)" },
+          // "25%": { transform: "translateY(5px)" },
+          "50%": { transform: "translateY(10%)" },
+          // "75%": { transform: "translateY(-5px)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
-        float: 'float 5s ease-in-out infinite'
-      }
+        float: "float 5s ease-in-out infinite",
+        "float-1": "float-1 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

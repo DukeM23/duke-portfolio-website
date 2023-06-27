@@ -12,7 +12,7 @@ export default function ProjectCard({ project }: { project:Project }) {
     } = project
     
     return (
-      <div className="flex flex-col text-secondary">
+      <div className="flex flex-col text-secondary-200">
         <a href={url} target="_blank">
           <img src={img} alt={alt} className="rounded-t-lg" />
         </a>
