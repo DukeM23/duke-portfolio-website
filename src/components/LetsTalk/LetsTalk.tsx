@@ -44,7 +44,6 @@ export default function LetsTalk() {
               over coffee. Don't be afraid to drop me a message!
             </p>
             <div className="flex flex-wrap gap-y-5 gap-x-10 justify-between">
-              {/* <a href="mailto:">dukemaquiling@gmail.com</a> */}
               <ul className="flex gap-x-10 text-4xl lg:text-5xl">
                 {socials.map(({ icon, href }, idx) => (
                   <li key={idx}>
@@ -62,7 +61,7 @@ export default function LetsTalk() {
           <img
             src={PunPun}
             className="sm:block animate-float"
-            onClick={handleClick}
+            // onClick={handleClick}
           />
         </div>
       </div>
