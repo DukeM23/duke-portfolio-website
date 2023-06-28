@@ -22,13 +22,13 @@ export default function LetsTalk() {
     },
   ];
 
-  const handleClick = () => {
-    if(click !== 3) {
-      setClick((prevState) => prevState + 1)
-    } else {
-      setClick(0)
-    }
-  }
+  // const handleClick = () => {
+  //   if(click !== 3) {
+  //     setClick((prevState) => prevState + 1)
+  //   } else {
+  //     setClick(0)
+  //   }
+  // }
 
     return (
       <div

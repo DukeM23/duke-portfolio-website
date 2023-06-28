@@ -1,20 +1,6 @@
-
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import SideBar from "./SideBar";
 
 export default function Menu() {
-
-  const contacts = [
-    {
-      url: "https://github.com/DukeM23",
-      icon: faGithub,
-    },
-    {
-      url: "https://www.linkedin.com/in/duke-maquiling-37997813a/",
-      icon: faLinkedin,
-    },
-  ];
 
     return (
       <nav className="pt-20">
@@ -22,7 +8,6 @@ export default function Menu() {
           <SideBar />
         </div>
         <div className="hidden sm:flex flex-wrap justify-between gap-x-10 sm:gap-y-8 items-center nav-link">
-          {/* <div className="flex items-center space-x-10"> */}
           <a href="/">
             <h3
               id="home"
@@ -57,21 +42,6 @@ export default function Menu() {
               Contact
             </a>
           </div>
-          {/* </div> */}
-          {/* <ul className="flex items-center space-x-5">
-            {contacts.map(({ url, icon }, idx) => (
-              <li key={idx}>
-                <a href={url} target="_blank">
-                  <FontAwesomeIcon icon={icon} />
-                </a>
-              </li>
-            ))}
-            <li>
-              <a href="mailto:dukemaquiling@gmail.com" target="_blank">
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>
-            </li>
-          </ul> */}
         </div>
       </nav>
     );
