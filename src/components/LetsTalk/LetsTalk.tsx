@@ -1,11 +1,11 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+// import { useState } from "react";
 import PunPun from "../../assets/punpun.png"
 
 export default function LetsTalk() {
-  const [ click, setClick ] = useState(0)
+  // const [ click, setClick ] = useState(0)
   
   const socials = [
     {
