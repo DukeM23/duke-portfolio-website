@@ -12,7 +12,7 @@ export default function Projects() {
         description:
           "A portfolio website showcasing Mikaela Maquiling's work experience and accomplishments.",
         img: MikaelaPortfolio,
-        alt: "A scrren shot of Mikaela Maquiling's Portfolio website",
+        alt: "A screen shot of Mikaela Maquiling's Portfolio website",
         technologies: ["React", "Tailwind CSS", "Auth0"],
       },
       {
