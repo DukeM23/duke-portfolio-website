@@ -7,6 +7,21 @@ import PunPun from "../../assets/punpun.png"
 export default function LetsTalk() {
   const [ click, setClick ] = useState(0)
   
+  const socials = [
+    {
+      icon: faEnvelope,
+      href: "mailto:dukemaquiling@gmail.com",
+    },
+    {
+      icon: faGithub,
+      href: "https://github.com/DukeM23",
+    },
+    {
+      icon: faLinkedin,
+      href: "https://www.linkedin.com/in/duke-maquiling-37997813a/",
+    },
+  ];
+
   const handleClick = () => {
     if(click !== 3) {
       setClick((prevState) => prevState + 1)
@@ -18,33 +33,37 @@ export default function LetsTalk() {
     return (
       <div
         id="contact"
-        className="grid grid-cols-3 sm:grid-cols-2 sm:place-items-center py-52 font-roboto text-secondary-200"
+        className="grid grid-cols-3 sm:grid-cols-2 sm:place-items-center gap-x-5 py-52 font-roboto text-secondary-200"
       >
         <section className="col-span-2 sm:col-span-1 flex flex-col space-y-5">
           <h1>Let's talk!</h1>
           <div className="flex flex-col space-y-8 text-2xl">
             <p>
-              I'm open to exploring new opportunities, but if you wanted to ask
-              a question or have a friendly conversation, don't be afraid to
-              drop me a message!
+              Whether it be something development related or exploring
+              opportunities, I'm always happy to have a friendly conversation
+              over coffee. Don't be afraid to drop me a message!
             </p>
-            <div className="flex flex-wrap space-y-5 justify-between">
-              <p>dukemaquiling@gmail.com</p>
-              <ul className="flex space-x-5 text-3xl">
-                {
-                  [faGithub, faLinkedin, faEnvelope].map((icon, idx) => (
-                    <li key={idx}>
-                      <FontAwesomeIcon icon={icon} />
-                    </li>
-                  ))
-                }
+            <div className="flex flex-wrap gap-y-5 gap-x-10 justify-between">
+              {/* <a href="mailto:">dukemaquiling@gmail.com</a> */}
+              <ul className="flex gap-x-10 text-4xl lg:text-5xl">
+                {socials.map(({ icon, href }, idx) => (
+                  <li key={idx}>
+                    <a href={href} target="_blank">
+                      <FontAwesomeIcon className="drop-shadow-md" icon={icon} />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </section>
         <div className="place-self-center">
           {/* { click === 3 && <p>Peepooppeepeepeepoopoo</p>} */}
-          <img src={PunPun} className="sm:block animate-float" onClick={handleClick}/>
+          <img
+            src={PunPun}
+            className="sm:block animate-float"
+            onClick={handleClick}
+          />
         </div>
       </div>
     ); 
