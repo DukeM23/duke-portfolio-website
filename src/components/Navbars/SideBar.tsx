@@ -64,16 +64,19 @@ export default function SideBar() {
               </svg>
             </div>
             <div className="flex flex-col gap-5 mt-6 ml-5 text-secondary-200">
-              <a onClick={() => setShowSidebar(!showSidebar)} href="/">
-                My Work
+              <a onClick={() => setShowSidebar(!showSidebar)} href="#intro">
+                Home
               </a>
-              <a onClick={() => setShowSidebar(!showSidebar)} href="/myart">
-                My Art
+              <a onClick={() => setShowSidebar(!showSidebar)} href="#projects">
+                Projects
               </a>
-              <a onClick={() => setShowSidebar(!showSidebar)} href="/about">
-                About
+              <a onClick={() => setShowSidebar(!showSidebar)} href="#about-me">
+                About Me
               </a>
-              <a
+              <a onClick={() => setShowSidebar(!showSidebar)} href="#contact">
+                Contact
+              </a>
+              {/* <a
                 // alt="alt text"
                 download
                 target="_blank"
@@ -81,7 +84,7 @@ export default function SideBar() {
                 href="/Resume - Mikaela Maquiling.pdf"
               >
                 Resume
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

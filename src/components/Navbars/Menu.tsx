@@ -3,12 +3,12 @@ import SideBar from "./SideBar";
 export default function Menu() {
 
     return (
-      <nav className="pt-20">
+      <nav className="pt-16">
         <div className="block sm:hidden">
           <SideBar />
         </div>
         <div className="hidden sm:flex flex-wrap justify-between gap-x-10 sm:gap-y-8 items-center nav-link">
-          <a href="/">
+          <a href="#intro">
             <h3
               id="home"
               className="text-secondary-200 font-semibold text-4xl "
@@ -27,13 +27,13 @@ export default function Menu() {
               href="#about-me"
               className="my-auto transition-colors duration-500 underline decoration-transparent ease-in-out hover:decoration-secondary-200 hover:underline hover:underline-offset-3"
             >
-              About Me
+              Projects
             </a>
             <a
               href="#projects"
               className="my-auto transition-colors duration-500 underline decoration-transparent ease-in-out hover:decoration-secondary-200 hover:underline hover:underline-offset-3"
             >
-              Projects
+              About Me
             </a>
             <a
               href="#contact"

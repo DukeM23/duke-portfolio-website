@@ -25,7 +25,7 @@ export default function AboutMe() {
               say thank you!
             </p>
             <div className="block md:hidden w-2/3 mx-auto">
-              <div className="relative rounded-lg overflow-hidden w-fit mx-auto">
+              <div className="relative shadow-lg rounded-lg overflow-hidden w-fit mx-auto">
                 <div className="absolute flex items-center justify-center h-full w-full bg-secondary-100 transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-90">
                   <p className="mistake text-center text-white">
                     This t-shirt made me a crazy poor asian.
@@ -39,16 +39,18 @@ export default function AboutMe() {
               </div>
             </div>
             <p>
-              Aside from sitting in front of a computer, I cook and lift on my
-              free time. Recently hit 225 by the way 😏.
+              When I'm not looking at my code asking <i>"Why does this work?"</i>, I'm usually either cooking and weightlifting on my
+              free time.
             </p>
           </div>
           <div className="hidden lg:block my-10">
             <p>Some tools and technologies I've been using are:</p>
             <div className="flex flex-wrap gap-x-3 gap-y-2 my-5">
-              {technologies.map((technology: string, idx) => (
-                <Technology key={idx} technology={technology} />
-              ))}
+              {
+                technologies.map((technology: string, idx) => (
+                  <Technology key={idx} technology={technology} />
+                ))
+              }
             </div>
           </div>
         </section>

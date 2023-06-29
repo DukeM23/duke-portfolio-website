@@ -24,11 +24,11 @@ export default {
           "100%": { transform: "translateY(2rem)" },
         },
         "float-1": {
-          "0%": { transform: "translateY(0)" },
-          // "25%": { transform: "translateY(5px)" },
+          "0%": { transform: "translateY(-5%)" },
           "50%": { transform: "translateY(10%)" },
-          // "75%": { transform: "translateY(-5px)" },
-          "100%": { transform: "translateY(0)" },
+          // "50%": { transform: "translateY(-5%)" },
+          // "66%": { transform: "translateY(10%)" },
+          "100%": { transform: "translateY(-5%)" },
         },
       },
       animation: {
