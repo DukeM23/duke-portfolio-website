@@ -45,13 +45,15 @@ export default function LetsTalk() {
             </p>
             <div className="flex flex-wrap gap-y-5 gap-x-10 justify-between">
               <ul className="flex gap-x-10 text-4xl lg:text-5xl">
-                {socials.map(({ icon, href }, idx) => (
-                  <li key={idx}>
-                    <a href={href} target="_blank">
-                      <FontAwesomeIcon className="drop-shadow-md" icon={icon} />
-                    </a>
-                  </li>
-                ))}
+                {
+                  socials.map(({ icon, href }, idx) => (
+                    <li key={idx}>
+                      <a href={href} target="_blank">
+                        <FontAwesomeIcon className="drop-shadow-md" icon={icon} />
+                      </a>
+                    </li>
+                  ))
+                }
               </ul>
             </div>
           </div>
@@ -61,6 +63,7 @@ export default function LetsTalk() {
           <img
             src={PunPun}
             className="sm:block animate-float"
+            alt="Punpun floating"
             // onClick={handleClick}
           />
         </div>

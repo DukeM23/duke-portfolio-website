@@ -65,9 +65,11 @@ export default function AboutMe() {
         <div className="col-span-2 lg:hidden text-secondary-200 my-10">
           <p>Some tools and technologies I've been using are:</p>
           <div className="flex flex-wrap gap-x-3 gap-y-2 my-5">
-            {technologies.map((technology: string, idx) => (
-              <Technology key={idx} technology={technology} />
-            ))}
+            {
+              technologies.map((technology: string, idx) => (
+                <Technology key={idx} technology={technology} />
+              ))
+            }
           </div>
         </div>
       </div>
