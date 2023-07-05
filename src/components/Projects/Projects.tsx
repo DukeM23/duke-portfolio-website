@@ -24,7 +24,7 @@ export default function Projects() {
         alt: "A scrren shot of Randomify",
         technologies: ["React", "TailwindCSS"],
       },
-    ];
+    ]
     
     return (
       <div id="projects" className="py-52 font-roboto text-secondary-200">

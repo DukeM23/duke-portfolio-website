@@ -3,11 +3,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { useState } from "react";
 import PunPun from "../../assets/punpun.png"
+import { Social } from "../../interface/social.interface";
 
 export default function LetsTalk() {
-  // const [ click, setClick ] = useState(0)
   
-  const socials = [
+  const socials:Array<Social> = [
     {
       icon: faEnvelope,
       href: "mailto:dukemaquiling@gmail.com",
@@ -22,20 +22,12 @@ export default function LetsTalk() {
     },
   ];
 
-  // const handleClick = () => {
-  //   if(click !== 3) {
-  //     setClick((prevState) => prevState + 1)
-  //   } else {
-  //     setClick(0)
-  //   }
-  // }
-
     return (
-      <div
+      <section
         id="contact"
         className="grid grid-cols-3 sm:grid-cols-2 sm:place-items-center gap-x-5 py-52 font-roboto text-secondary-200"
       >
-        <section className="col-span-2 sm:col-span-1 flex flex-col space-y-5">
+        <div className="col-span-2 sm:col-span-1 flex flex-col space-y-5">
           <h1>Let's talk!</h1>
           <div className="flex flex-col space-y-8 text-2xl">
             <p>
@@ -57,16 +49,14 @@ export default function LetsTalk() {
               </ul>
             </div>
           </div>
-        </section>
+        </div>
         <div className="place-self-center">
-          {/* { click === 3 && <p>Peepooppeepeepeepoopoo</p>} */}
           <img
             src={PunPun}
             className="sm:block animate-float"
             alt="Punpun floating"
-            // onClick={handleClick}
           />
         </div>
-      </div>
+      </section>
     ); 
 }

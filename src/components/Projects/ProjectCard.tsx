@@ -21,11 +21,9 @@ export default function ProjectCard({ project }: { project:Project }) {
             <h3 className="mb-5">{title}</h3>
             <p>{description}</p>
             <div className="mt-5 flex flex-wrap space-x-3">
-              {
-                technologies.map((technology: string, idx) => (
-                    <Technology key={idx} technology={technology} />
-                ))
-              }
+              {technologies.map((technology: string, idx) => (
+                <Technology key={idx} technology={technology} />
+              ))}
             </div>
           </section>
         </div>

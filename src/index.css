@@ -15,9 +15,6 @@
         @apply text-lg sm:text-2xl font-roboto
     }
     
-    /* p {
-        @apply text-3xl
-    } */
 }
 
 @layer components {
@@ -49,7 +46,7 @@
         @apply mx-auto w-4/5 2xl:w-3/5
     }
 
-    /* .mistake {
-        @apply text-base sm:text-2xl
-    } */
+    .see-more:hover .see-more-arrow {
+        @apply animate-bounce-right
+    }
 }

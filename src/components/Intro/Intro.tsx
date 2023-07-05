@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Intro() {
     return (
-      <div
+      <section
         id="intro"
         className="py-52 sm:grid grid-cols-1 md:grid-cols-2 gap-x-6"
       >
         <div className="my-auto">
-          <section className="grid grid-cols-1 space-y-10 text-secondary-200">
+          <div className="grid grid-cols-1 space-y-10 text-secondary-200">
             <img
               src={DukeHeadshot}
               alt="A picture of Duke"
@@ -33,13 +33,13 @@ export default function Intro() {
                 icon={faArrowDown}
               />
             </span>
-          </section>
+          </div>
         </div>
         <img
           src={DukeHeadshot}
           alt="A picture of Duke"
           className="hidden md:block place-self-center rounded-lg shadow-md"
         />
-      </div>
+      </section>
     );
 }
