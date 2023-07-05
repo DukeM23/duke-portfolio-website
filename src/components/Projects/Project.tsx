@@ -1,4 +1,4 @@
-import { faArrowLeft, faArrowRight, faArrowRightLong, faLink } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Project } from "../../interface/project.interface"
 import Technology from "./Technology";
