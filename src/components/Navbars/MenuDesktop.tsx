@@ -31,6 +31,15 @@ export default function MenuDesktop() {
         >
           Contact
         </a>
+        <a
+          className="my-auto transition-colors duration-500 underline decoration-transparent ease-in-out hover:decoration-secondary-200 hover:underline hover:underline-offset-3"
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          href="/src/assets/Duke-Maquiling-Resume.pdf"
+        >
+          Resume
+        </a>
       </div>
     </nav>
   );

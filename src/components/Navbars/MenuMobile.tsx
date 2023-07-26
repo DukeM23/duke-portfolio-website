@@ -1,11 +1,10 @@
-import { useState, useRef } from "react"
-import useClickedOutsideSideBar from "../../hooks/useClickedOutsideSideBar"
-
+import { useState, useRef } from "react";
+import useClickedOutsideSideBar from "../../hooks/useClickedOutsideSideBar";
 
 export default function MenuMobile() {
-  const [showSidebar, setShowSidebar] = useState(false)
-  const wrapperRef = useRef(null)
-  useClickedOutsideSideBar(wrapperRef, setShowSidebar)
+  const [showSidebar, setShowSidebar] = useState(false);
+  const wrapperRef = useRef(null);
+  useClickedOutsideSideBar(wrapperRef, setShowSidebar);
 
   return (
     <nav
@@ -75,18 +74,18 @@ export default function MenuMobile() {
             <a onClick={() => setShowSidebar(!showSidebar)} href="#contact">
               Contact
             </a>
-            {/* <a
+            <a
               // alt="alt text"
               download
               target="_blank"
               rel="noopener noreferrer"
-              href="/Resume - Mikaela Maquiling.pdf"
+              href="/src/assets/Duke-Maquiling-Resume.pdf"
             >
               Resume
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }
