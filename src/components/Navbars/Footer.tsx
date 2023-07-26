@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="pb-5 font-roboto text-secondary-200 text-xl">
-      <ul className="flex gap-x-5">
+      <ul className="flex flex-col gap-y-3 sm:flex-row sm:gap-x-5">
         <li>
           <a href="#intro">Home</a>
         </li>
@@ -25,6 +25,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
+      <span></span>
     </footer>
   );
 }

@@ -3,50 +3,49 @@
 @tailwind utilities;
 
 @layer base {
-    h1 {
-        @apply text-4xl sm:text-6xl font-semibold font-roboto
-    }
+  h1 {
+    @apply text-4xl sm:text-6xl font-semibold font-roboto;
+  }
 
-    h3 {
-        @apply text-2xl sm:text-4xl font-semibold font-roboto
-    }
+  h3 {
+    @apply text-2xl sm:text-4xl font-semibold font-roboto;
+  }
 
-    p {
-        @apply text-lg sm:text-2xl font-roboto
-    }
-    
+  p {
+    @apply text-lg sm:text-2xl font-roboto;
+  }
 }
 
 @layer components {
-    .kami-sama {
-        @apply transition ease-in-out absolute -rotate-[24deg] sm:-rotate-45 translate-x-[10vw] translate-y-40 w-1/2 sm:w-2/6 sm:translate-x-36 sm:translate-y-52 md:translate-x-48 md:translate-y-52 lg:translate-x-56 lg:translate-y-32 xl:translate-x-96 xl:translate-y-0
-    } 
-    
-    .kami-sama:hover {
-        @apply hover:-translate-x-1 sm:hover:translate-x-24 md:hover:translate-x-28 lg:hover:translate-x-36 xl:hover:translate-x-72
-    }
+  .kami-sama {
+    @apply transition ease-in-out absolute -rotate-[24deg] sm:-rotate-45 translate-x-[10vw] translate-y-40 w-1/2 sm:w-2/6 sm:translate-x-36 sm:translate-y-52 md:translate-x-48 md:translate-y-52 lg:translate-x-56 lg:translate-y-32 xl:translate-x-96 xl:translate-y-0;
+  }
 
-    .good-vibration {
-        @apply transition -z-10 w-1/6 sm:w-2/12 ease-in-out absolute translate-y-16 translate-x-[55vw] sm:translate-y-52 sm:translate-x-96 lg:w-32 xl:w-40 xl:translate-x-[80vw] xl:translate-y-36
-    }
+  .kami-sama:hover {
+    @apply hover:-translate-x-1 sm:hover:translate-x-24 md:hover:translate-x-28 lg:hover:translate-x-36 xl:hover:translate-x-72;
+  }
 
-    .kami-sama:hover + .good-vibration {
-        @apply translate-y-16 translate-x-0 xl:translate-x-20
-    }
+  .good-vibration {
+    @apply transition -z-10 w-1/6 sm:w-2/12 ease-in-out absolute translate-y-16 translate-x-[55vw] sm:translate-y-52 sm:translate-x-96 lg:w-32 xl:w-40 xl:translate-x-[80vw] xl:translate-y-36;
+  }
 
-    #project-link:hover > #down-arrow {
-        @apply animate-float-1
-    }
+  .kami-sama:hover + .good-vibration {
+    @apply translate-y-16 translate-x-0 xl:translate-x-20;
+  }
 
-    .nav-link {
-        @apply font-roboto text-secondary-200 text-2xl
-    }
-    
-    .responsive-container {
-        @apply mx-auto w-4/5 2xl:w-3/5
-    }
+  #project-link:hover > #down-arrow {
+    @apply animate-float-1;
+  }
 
-    .see-more:hover .see-more-arrow {
-        @apply animate-bounce-right
-    }
+  .nav-link {
+    @apply font-roboto text-secondary-200 text-2xl;
+  }
+
+  .responsive-container {
+    @apply mx-auto w-4/5 2xl:w-3/5;
+  }
+
+  .see-more:hover .see-more-arrow {
+    @apply animate-bounce-right;
+  }
 }
